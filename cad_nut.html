@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>CADASTROS</title>
+	<title>Cadastro - Nutricionista</title>
 	<link rel="shortcut icon" type="image/x-png" href="favicon2.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<style>
@@ -31,11 +31,12 @@
 			margin-top: 10%;
 		}
 
-		button{
+		form{
 			margin-top:5%;
 			margin-left: 37.5%;
-			width: 300px;
-			height: 75PX;
+			width: 1000px;
+			height: 200PX;
+
 		}
 
 		#lg{
@@ -48,6 +49,56 @@
 			font-size: 30px;
 		}
 
+		#btn2{
+			margin-top:3%;
+			margin-left: 36.5%;
+			width: 400px;
+			height: 100PX;
+			font-size: 25PX
+		}
+
+		#lb_nome{
+			margin-top:5%;
+			margin-left: -22%;
+			width: 500px;
+			height: 70PX;
+			border-color: #1979a9;
+			font-size: 30px;
+		}
+
+		#lb_valor{
+			margin-top:5%;
+			margin-left: -20%;
+			width: 500px;
+			height: 70PX;
+			border-color: #1979a9;
+			font-size: 30px;
+		}
+
+		#lb_data{
+			margin-top:5%;
+			margin-left: -18%;
+			width: 500px;
+			height: 70PX;
+			border-color: #1979a9;
+			font-size: 30px;
+		}
+
+		#lb_hor{
+			margin-top:65%;
+			margin-left: -222%;
+			width: 500px;
+			height: 70PX;
+			border-color: #1979a9;
+			font-size: 30px;
+		}
+
+		#btn{
+			margin-top:450%;
+			margin-left:-600%;
+			width: 100%;
+			height: 40px;
+		}
 	</style>
 </head>
 
@@ -77,9 +128,28 @@
   </div>
 </nav>
 
-	<a href="cad_oft.html"><button type="button" class="btn btn-primary">OFTAMOLOGISTA</button></a>
-	<a href="cad_nut.html"><button type="button" class="btn btn-primary">NUTRICIONISTA</button></a>
-	<a href="cad_psi.html"><button type="button" class="btn btn-primary">PSICÓLOGO</button></a>
+	<button type="button" class="btn btn-primary" id="btn2">CADASTRO PARA CONSULTA DE NUTRICIONISTA</button>
+
+	<form>
+		<div class="form-row">
+    	<div class="col-md-4 mb-3">
+      	<input type="text" id="lb_nome" class="form-control" placeholder="Digite seu nome completo" value="" required>
+    </div>
+    <div class="form-row">
+    	<div class="col-md-4 mb-3">
+      	<input type="text" id="lb_valor" class="form-control" placeholder="Digite o valor da consulta" value="" required>
+    </div>
+    <div class="form-row">
+    	<div class="col-md-4 mb-3">
+      	<input type="text" id="lb_data" class="form-control" placeholder="Data da consulta" value="" required>
+	    </div>
+    <div class="form-row">
+    	<div class="col-md-4 mb-3">
+      	<input type="text" id="lb_hor" class="form-control" placeholder="Horário da consulta" value="" required>
+    </div>
+	</form>
+
+	<a href="cadastros.html"><button type="button" class="btn btn-outline-success btn-sm" id="btn">Enviar</button></a>	
 
 </body>
 
