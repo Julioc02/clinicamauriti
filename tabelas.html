@@ -2,88 +2,102 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>TABELAS</title>
+	<title>AGENDAMENTOS</title>
 	<link rel="shortcut icon" type="image/x-png" href="favicon2.png">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<style>
 
-		#menu{
-      		font-family: corbel;
-      		font-size: 24pt;
-      		margin-left: -30%;
+	#menu{
+		background-color: #1E90FF;
+		width: 1350px;
+		height: 90px;		
+	}
 
-   		 }
+	body{
+		background-image: url(download.jpg);
+		background-attachment: fixed;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-color: #000;
+	}
 
-		nav{
-			height: 130px;
-			margin-top: 1%;
-		}
 
-		body{
-			background-image: url(download.jpg);
-			background-attachment: fixed;
-			background-size: 100%;
-			background-repeat: no-repeat;
-			background-color: #000;
-		}
-
-		#logo{
-			margin-left: 37.5%;
-			margin-top: 10%;
-		}
-		button{
-			margin-top:5%;
-			margin-left: 37.5%;
-			width: 300px;
-			height: 75PX;
-		}
-
-		#lg{
-			width: 200px;
-			height: 200px;
-		}
-
-		#navbarNav{
-			margin-left: 25%;
-			font-size: 30px;
-		}
-		.nav-item{
-			margin-left: 5%;
-		}
+		#imgMenu{
+		margin-top: -55px;
+		margin-left: 30px;
+		width: 200px;
+		height: 200px;
+	}
+	#itens{
+		word-spacing: 2.5em;
+		font-size: 24pt;
+		font-family: corbel;
+		text-decoration:
+	}
+	#itensX{
+		margin-top: -125px;
+		margin-left: 350px;
+	}
+	.imglink{
+		width: 400px;
+		height: 300px;
+		border: 1px solid black;
+		margin-left: 35%;
+		margin-top: 5%;
+	}
+	.tit{
+		background-color: #1E90FF;
+		border-radius: 5px;
+		border: 1px solid black;
+		font-size: 20pt;
+		font-family: corbel;
+		color: white;
+		text-align: center;
+		margin-left: 37.5%;
+		margin-top: 5%;
+	}
+	#btn{
+		background-color: red;
+		margin-left: 85%;
+		margin-top: 3%;
+		color: white;
+		width: 100px;
+		height: 50px;
+		text-align: center;
+		font-size: 14pt;
+		border-radius: 10px; 
+	}
+	.null{
+		color: #A9A9A9;
+	}
+	a{
+		text-decoration: none;
+		color: white;
+	}
 
 	</style>
 </head>
 
 <body>
-	<nav class="navbar navbar-dark bg-primary navbar-expand-lg">
-		<a class="navbar-brand" href="index.html">
-    	<img src="clin.png" width="110" height="110" alt="" id="lg">
-  		</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav" id="menu">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="cadastros.html">CADASTROS</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="tabelas.html">AGENDAMENTOS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="qs.html">SOBRE</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<div id="menu">
+			<img src="clin.png" id="imgMenu">	
+			<div id="itensX">
+				<span id="itens"> 
+					<a href="index.html" class="null">HOME</a> 
+					<a href="cadastros.html" class="null">CADASTROS</a> 
+					<a href="tabelas.html">AGENDAMENTOS</a> 
+					<a href="qs.html" class="null">SOBRE</a>
+				</span>
+			</div>
+		</div>
 
-	<a href="tb_oft.html"><button type="button" class="btn btn-primary">OFTAMOLOGISTA</button></a>
-	<a href="tb_nut.html"><button type="button" class="btn btn-primary">NUTRICIONISTA</button></a>
-	<a href="tb_psi.html"><button type="button" class="btn btn-primary">PSICÓLOGO</button></a>
+	<a href="tb_oft.html"><img src="ofta.jpg" class="imglink"></a>
+		<span class="tit">Agendados com Oftamologista</span>
+	<a href="tb_nut.html"><img src="nutri.jpg" class="imglink"></a>
+		<span class="tit">Agendados com Nutricionista</span>
+	<a href="tb_psi.html"><img src="psico.jpg" class="imglink"></a>
+		<span class="tit">Agendados com Psicólogo</span>
 
+	<a href="index.html"><button id="btn">VOLTAR</button></a>		
 </body>
 
 </html>
